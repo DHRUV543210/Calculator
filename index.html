@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="screen">
+                <input type="text" id="screeninput" placeholder="0">
+            </div>
+            <div class="typearea">
+                <div class="row" id="row1">
+                    <input type="button" value="AC" onclick="put(value)" class="operator1">
+                    <input type="button" value="DE" onclick="put(value)" class="operator2">
+                    <input type="button" value="." onclick="put(value)">
+                    <input type="button" value="/" class="commongreen" onclick="put(value)">
+                </div>
+                <div class="row" id="row2">
+                    <input type="button" value="7" onclick="put(value)">
+                    <input type="button" value="8" onclick="put(value)">
+                    <input type="button" value="9" onclick="put(value)">
+                    <input type="button" value="*" class="commongreen" onclick="put(value)">
+                </div>
+                <div class="row" id="row3">
+                    <input type="button" value="4" onclick="put(value)">
+                    <input type="button" value="5" onclick="put(value)">
+                    <input type="button" value="6" onclick="put(value)">
+                    <input type="button" value="-" class="commongreen" onclick="put(value)">
+                </div>
+                <div class="row" id="row4">
+                    <input type="button" value="1" onclick="put(value)">
+                    <input type="button" value="2" onclick="put(value)">
+                    <input type="button" value="3" onclick="put(value)">
+                    <input type="button" value="+" class="commongreen" onclick="put(value)">
+                </div>
+                <div class="row" id="row5">
+                    <input type="button" value="00" id="row51" onclick="put(value)">
+                    <input type="button" value="0" id="row52" onclick="put(value)">
+                    <input type="button" value="=" id="row53" onclick="put(value)" class="equal">
+                </div>
+                <!-- <div class="row" id="row6">
+
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
